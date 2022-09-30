@@ -76,7 +76,7 @@ def custom_unzip(zip_path, nb_threads):
 
 print(sys.argv)
 assert len(sys.argv) == 3, "incorrect number of arguments: " + str(len(sys.argv) - 1) + ". Expected to be 2 : NB_Threads, archive_path"
-NB_THREAD = int(sys.argv[0])
+NB_THREAD = int(sys.argv[1])
 ZIP_PATH = sys.argv[2]
 custom_unzip(ZIP_PATH, NB_THREAD)
 
